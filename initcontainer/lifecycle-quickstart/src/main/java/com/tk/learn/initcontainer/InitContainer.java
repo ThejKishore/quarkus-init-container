@@ -48,7 +48,7 @@ public class InitContainer implements QuarkusApplication {
         String yamlFilePath = System.getenv("SECRET_YAML_PATH");
         if (yamlFilePath == null) {
             // Fallback to default if the environment variable is not set yamlFilePath = "/tmp/secrets.yaml";
-            yamlFilePath = "/Users/thejkaruneegar/quarkusInitContainer/initcontainer/lifecycle-quickstart/build/tmp/secrets.yaml";
+            yamlFilePath = "/Users/quarkusInitContainer/initcontainer/lifecycle-quickstart/build/tmp/secrets.yaml";
             // Modify as per your need (e.g., location in Docker container)
         }
         // Specify the file path where you want to store the YAML file
